@@ -1,0 +1,16 @@
+DATA_MAX_SIZE = 0x8000
+
+LITERAL_BITS = 8
+
+# OffsetBits Number of bits for the Window offset. From this the WindowSize will be calculated
+OFFSET_BITS = 11
+LENGTH_BITS = 4
+
+WINDOW_SIZE = 1 << OFFSET_BITS
+
+MAX_UNCODED = 2
+MAX_CODED = MAX_UNCODED + (1 << LENGTH_BITS)
+
+WINDOW_INITIAL_INDEX = WINDOW_SIZE - 0x10 - 1
+
+WINDOW_FILL_VALUE = 0x20

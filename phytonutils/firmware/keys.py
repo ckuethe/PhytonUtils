@@ -1,0 +1,4 @@
+"""Port of firmware/keys.go."""
+
+BLOCK_HEADER_SIZE_KEY = 0xCE27A932
+BLOCK_HEADER_ADDR_KEY = 0xB2D5A864
